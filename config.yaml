@@ -20,20 +20,57 @@ md_readme_path: 'README.md'
 md_gitpage_path: './docs/index.md'
 md_wechat_path: './docs/wechat.md'
 
-# keywords to search
+# 核心技术栈追踪
 keywords:
-    "SLAM": 
-        filters: ["SLAM", "Visual Odometry"]
-    "SFM":
-        filters: ["SFM", "Structure from Motion"]
-    "Visual Localization":
-        filters: ["Visual Localization","Camera Localization",
-                  "Camera Re-localisation","Loop Closure Detection",
-                  "visual place recognition","image retrieval"]
-    "Keypoint Detection":
-        filters: ["Keypoint Detection", "Feature Descriptor"]
-    "Image Matching":
-        filters: ["Image Matching", "Keypoint Matching", 
-                  "Line Segment Detection", "Local Feature Matching"]
-    "NeRF":
-        filters: ["NeRF"]
+    "风险建模":
+        filters: ["CTR Prediction", "Propensity Model", "Credit Scoring", 
+                  "Fraud Score", "Risk Scoring", "Behavioral Scoring"]
+        tags: ["技术栈-监督学习", "应用场景-金融风控"]
+
+    "图分析技术":
+        filters: ["Graph Clustering", "Community Detection", "Node2Vec", 
+                  "Struct2Vec", "GCN", "Graph Embedding", "Homogeneous Graph",
+                  "Heterogeneous Graph", "Link Prediction"]
+        tags: ["技术栈-图计算", "应用场景-团伙检测"]
+
+    "异常检测":
+        filters: ["Isolation Forest", "AutoEncoder", "Outlier Detection", 
+                  "Unsupervised Anomaly", "Fraud Detection via Anomaly"]
+        tags: ["技术栈-无监督学习", "应用场景-异常交易"]
+
+    "序列建模":
+        filters: ["LSTM for Fraud", "Transformer in Risk", "Temporal CNN", 
+                  "Behavior Sequence", "Session-based Detection"]
+        tags: ["技术栈-深度学习", "应用场景-行为分析"]
+
+# 业务场景定向追踪
+    "金融犯罪":
+        filters: ["Anti-Money Laundering", "AML", "Credit Card Fraud", 
+                  "Insurance Fraud", "Payment Fraud"]
+        tags: ["业务场景-金融安全"]
+
+    "数字欺诈":
+        filters: ["Account Takeover", "ATO", "Promotion Abuse", 
+                  "Click Fraud", "Fake Account Detection"]
+        tags: ["业务场景-平台安全"]
+
+# 跨领域技术
+    "可解释性":
+        filters: ["SHAP", "Shapley Value", "Tree Explainer", 
+                  "Model Interpretability", "Explainable AI in Fraud"]
+        tags: ["技术特性-可解释AI"]
+
+    "前沿技术":
+        filters: ["Reinforcement Learning for Fraud", "Few-shot Fraud Detection", 
+                  "Meta Learning in Risk", "GraphRL", "Adversarial Training"]
+        tags: ["研究方向-强化学习", "研究方向-对抗训练"]
+
+# 权威机构追踪
+    "顶会追踪":
+        filters: ["KDD", "WWW", "CIKM", "AAAI", "NeurIPS", "ICML", "WSDM"]
+        tags: ["来源-学术会议"]
+
+    "企业研究":
+        filters: ["Google Fraud Detection", "Microsoft Risk", "IBM Security", 
+                  "Alibaba Anti-Fraud", "PayPal Fraud", "Stripe Risk"]
+        tags: ["来源-工业界"]
